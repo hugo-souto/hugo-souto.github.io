@@ -1,2 +1,3 @@
-# hugosouto.github.io
-Hugo Souto's Portfolio.
+# Hugo Souto's Portfolio GitHub Page
+
+Code for Hugo Souto's Portfolio at [hugosouto.github.io](https://hugosouto.github.io/).
