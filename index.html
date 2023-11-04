@@ -14,6 +14,26 @@
         <link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+			gap: 10px;
+			align-items: center;
+			justify-items: center;
+		}
+		.grid-item {
+			/* background-color: rgba(255, 255, 255, 0.8); */
+			/* border: 1px solid rgba(0, 0, 0, 0.8); */
+			padding: 20px;
+			font-size: 1.5em;
+			text-align: center;
+		}
+		.grid-item img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -52,43 +72,102 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="assets/img/pic01.jpg" alt="" /></span>
-								<p>Hi, I'm Hugo Souto, a seasoned data scientist and former long-distance triathlete, committed to bringing focus and discipline to the field of machine learning.</p>
-								<p>With 8 years of managerial experience and over 5 years in data science, I've mainly worked as a Senior Data Scientist at ComprasGov, the official procurement system of the Federal Government of Brazil.</p>
-								<p>My expertise covers end-to-end data pipelines, from data engineering with multiple sources, to specialized data analysis for high-level management at the Ministry of Economy of Brazil. I am also experienced at dashboard development to comply with national transparency and regulations. Here you can check out some of my <a href="#work">work</a>.</p>
-								<p>In recent years, however, I've been focused on leading significant machine learning projects, one of which was proposed and is being developed by me using Microsoft Azure AI. I am now seeking opportunities that will help me to become a world-class Machine Learning Engineer.</p>
+								<!-- <span class="image main"><img src="assets/img/pic01.jpg" alt="" /></span> -->
+								<p>Hi, I'm Hugo Souto, a seasoned data scientist and former long-distance triathlete, committed to bringing focus and discipline to the field of machine learning. With 8 years of managerial experience and over 5 years in data science, I've mainly worked as a Senior Data Scientist at ComprasGov, the official procurement system of the Federal Government of Brazil.</p>
+								<p>My expertise covers end-to-end data pipelines, from data engineering with multiple sources, to specialized data analysis for high-level management at the Ministry of Economy of Brazil. I am also experienced at dashboard development to comply with national transparency and regulations.</p>
+								<p>In recent years, however, I've been focused on leading significant machine learning projects, one of which was proposed and is being developed by me using Microsoft Azure AI. Here you can check out some of my <a href="#work">work</a>.</p>
 								<!-- <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p> -->
 								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p> -->
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="assets/img/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
+						<article id="work">
+							<h2 class="major">Work</h2>
+							<section class="work-item">
+								<h4 class="work-title"><a href="https://github.com/hugosouto/hackerrank-challenges">HackerRank Challenges</a></h4>
+								<p>Solutions for various challenges in the domains of Algorithms, AI, Data Structures, Mathematics, and Python on HackerRank.</p>
+							</section>
+							<section class="work-item">
+								<h4 class="work-title"><a href="https://github.com/hugosouto/comprasgov-daas-sql-queries">ComprasGov DaaS SQL Queries</a></h4>
+								<p>Repository to store and share useful SQL queries for the ComprasGov systems' databases on SERPRO's DaaS.</p>
+							</section>
+							<section class="work-item">
+								<h4 class="work-title"><a href="https://github.com/hugosouto/azure-comprasgov-poc-desert-item">Azure ComprasGov POC Desert Item</a></h4>
+								<p>Data transformations and preprocessing to run Azure AutoML for predicting bidding item registrations in ComprasGov systems.</p>
+							</section>
+						</article>
 						
 						<!-- Skills -->
 						<article id="skills">
 							<h2 class="major">Skills</h2>
-							<span class="image main"><img src="assets/img/pic02.jpg" alt="" /></span>
-							<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							<!-- Grid Container -->
+							<!-- <p>My technology stack includes:</p> -->
+							<div class="grid-container">
+								<!-- Grid Item 1 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/python.png" width="60%" height="60%" title="Python" alt="Python Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>Python</p> -->
+								</div>
+								<!-- Grid Item 2 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/postgres.png" width="60%" height="60%" title="PostreSQL" alt="PostreSQL Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>PostreSQL</p> -->
+								</div>
+								<!-- Grid Item 3 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/pandas.png" width="50%" height="50%" title="Pandas" alt="Pandas Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>Pandas</p> -->
+								</div>
+								<!-- Grid Item 4 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/scikitlearn.png" width="100%" height="100%" title="Scikit-Learn" alt="Scikit-Learn Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>Scikit-Learn</p> -->
+								</div>
+								<!-- Grid Item 5 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/tensorflow.png" width="60%" height="60%" title="TensorFlow" alt="TensorFlow Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>TensorFlow</p> -->
+								</div>
+								<!-- Grid Item 6 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/azureml.png" width="50%" height="50%" title="Microsoft Azure Machine Learning" alt="Microsoft Azure Machine Learning Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>Microsoft Azure</p> -->
+								</div>
+								<!-- Grid Item 7 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/docker.png" width="60%" height="60%" title="Docker" alt="Docker Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>Docker</p> -->
+								</div>
+								<!-- Grid Item 8 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/airflow.png" width="50%" height="50%" title="Airflow" alt="Airflow Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>Airflow</p> -->
+								</div>
+								<!-- Grid Item 9 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/pytorch.png" width="50%" height="50%" title="PyTorch" alt="PyTorch Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>PyTorch</p> -->
+								</div>
+								<!-- Grid Item 10 -->
+								<div class="grid-item">
+									<img src="assets/img/techs/vscode.png" width="50%" height="50%" title="VS Code" alt="VS Code Logo" style="position:relative;top:20%;"/></span>
+									<!-- <p>VS Code</p> -->
+								</div>
+							</div>
+							<!-- <p>My soft skills includes:</p> -->
 						</article>
 
 						<!-- Posts -->
 						<article id="posts">
 							<h2 class="major">Posts</h2>
-							<span class="image main"><img src="assets/img/pic02.jpg" alt="" /></span>
-							<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							<!-- <span class="image main"><img src="assets/img/pic02.jpg" alt="" /></span> -->
+							<p>Please, check my posts at my <a href="https://medium.com/@hugosouto">Medium Blog</a>.</p>
 						</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="assets/img/pic03.jpg" alt="" /></span>
+								<!-- <span class="image main"><img src="assets/img/pic03.jpg" alt="" /></span> -->
 								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
 							</article>
 
